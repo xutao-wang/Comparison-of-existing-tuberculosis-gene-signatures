@@ -1,7 +1,7 @@
 #### Load data and functions ####
 source("functionsForResults.R")
 Khatri_set_list <- readRDS("~/Desktop/practice/ComparisonPaperAnalyze/OriginalModelsForTBSP/Khatri_set_list.RDS")
-## Refer "~/Desktop/practice/ComparisonPaperAnalyze/OriginalModelsForTBSP/Prepare_OriginalTrainingData.R" for Khatri_set_list preparation
+## Refer "Prepare_OriginalTrainingData.R" for Khatri_set_list preparation
 Khatri_set_num <- data.frame(Study = names(Khatri_set_list),
                              Observation = unlist(lapply(Khatri_set_list, ncol)))
 Khatri_set_num_24 <- Khatri_set_num |> 
